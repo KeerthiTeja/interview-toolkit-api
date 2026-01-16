@@ -17,3 +17,4 @@ async def request_id_middleware(request: Request, call_next):
         f"request_id={request_id} method={request.method} path={request.url.path} status={response.status_code}"
     )
     return response
+
